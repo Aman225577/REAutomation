@@ -57,10 +57,11 @@ public class AAfeature {
 		System.out.println("Inside-step after navigates to audience screen");
 		
 	
-		JavascriptExecutor jse= (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,550)", 200);
+	
 
 		driver.quit();
+		
+		
 	}
 
 }
