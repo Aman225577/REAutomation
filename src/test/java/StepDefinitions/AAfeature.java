@@ -42,6 +42,7 @@ public class AAfeature {
 		driver.findElement(By.xpath("(//span[contains(@class,'uil-dl-icon-Chevron-right')])[8]")).click();
 
 	}
+	
 
 	@Then("User lands to segment screen")
 	public void user_lands_to_segment_screen() throws InterruptedException{
