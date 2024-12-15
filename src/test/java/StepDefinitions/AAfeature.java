@@ -16,6 +16,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class AAfeature {
 	WebDriver driver = new EdgeDriver();
 	@Given("browser is opened")
@@ -42,7 +43,7 @@ public class AAfeature {
 		driver.findElement(By.xpath("(//span[contains(@class,'uil-dl-icon-Chevron-right')])[8]")).click();
 
 	}
-	
+
 
 	@Then("User lands to segment screen")
 	public void user_lands_to_segment_screen() throws InterruptedException{
@@ -56,13 +57,13 @@ public class AAfeature {
 	public void after_navigates_to_audience_screen()  {
 
 		System.out.println("Inside-step after navigates to audience screen");
-		
-	
-	
+
+
+
 
 		driver.quit();
-		
-		
+
+
 	}
 
 }

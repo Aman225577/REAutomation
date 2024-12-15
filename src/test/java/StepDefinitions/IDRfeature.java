@@ -3,7 +3,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.annotations.Test;
 
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
@@ -21,8 +21,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.opentelemetry.context.Context;
 
-public class IDRfeature {
 
+
+public class IDRfeature {
 
 
 	WebDriver driver = new EdgeDriver();
@@ -77,7 +78,7 @@ public class IDRfeature {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//li[contains(@id,'ACN Fresh')]")).click();
 		String s2 = driver.findElement(By.xpath("//div[@class='subheadlineText'][contains(.,'Total records processed: ')]")).getText();
-		System.out.print("ACN Fresh=");
+		System.out.println("ACN Fresh=");
 		System.out.println(s2);
 		Thread.sleep(1000);
 		
